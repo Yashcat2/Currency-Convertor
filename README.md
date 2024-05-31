@@ -1,2 +1,2 @@
 # Currency-Convertor
-Convert Your Currencies Today
+![Logo](Currency_Convertor.png)
