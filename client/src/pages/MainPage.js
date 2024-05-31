@@ -57,9 +57,9 @@ export default function MainPage() {
   },[]);
   return (
     <div>
-        <h1 className='text-5xl font-bold text-green-500 lg:mx-32'>
+        <h1 className='text-5xl font-bold text-sky-500 lg:mx-32 text-center'>
         Convert Your Currencies Today</h1>
-        <p className='lg:mx-32 opacity-40 py-6'>
+        <p className='lg:mx-32 opacity-40 py-6 text-justify'>
         Welcome to "Convert Your Currencies Today"! This application allows you
         to easily convert currencies based on the latest exchange rates. Whether
         you're planning a trip, managing your finances, or simply curious about
@@ -67,7 +67,7 @@ export default function MainPage() {
         help.
         </p>
         <div className='mt-5 flex items-center justify-center flex-col'>
-            <section className='w-full lg:w-1/2'>
+            <section className='w-full lg:w-1/4'>
                 <form onSubmit={handleSubmit}>
 
                     <div className="mb-4">
@@ -133,15 +133,15 @@ export default function MainPage() {
                     </div>
 
                     <button 
-                     className='bg-green-600 hover:bg-green-800 text-white font-medium py-2 px-4 rounded-md'>Get the target currency</button>
+                     className='bg-sky-600 hover:bg-sky-800 text-white font-medium py-2 px-4 rounded-md'>Get the target currency</button>
 
                 </form>
             </section>
         </div>
         {!loading ? (
-        <section className='lg:mx-72 text-xl mt-5'>
+        <section className='lg:mx-72 text-xl mt-5 text-center'>
         {amountInSourceCurrency} {currencyNAmes[sourceCurrency]} is equals to{" "}
-        <span className='text-green-500 font-bold'>{amountInTargetCurrency} </span>
+        <span className='text-sky-500 font-bold'>{amountInTargetCurrency} </span>
          in {currencyNAmes[targetCurrency]} 
         </section>
         ): null}
